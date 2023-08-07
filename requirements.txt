@@ -1,2 +1,2 @@
-tweepy
-tracery
+tweepy==4.14.0
+tracery==0.1.1
