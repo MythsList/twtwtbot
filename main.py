@@ -1,17 +1,18 @@
 #Libraries
 import tweepy
 import tracery
+import os
 
 from tracery.modifiers import base_english
 
 #Keys
-apiKey = "API_KEY"
-apiSecret = "API_SECRET"
+apiKey = os.getenv("API_KEY")
+apiSecret = os.getenv("API_SECRET")
 
-accessToken = "ACCESS_TOKEN"
-accessTokenSecret = "ACCESS_TOKEN_SECRET"
+accessToken = os.getenv("ACCESS_TOKEN")
+accessTokenSecret = os.getenv("ACCESS_TOKEN_SECRET")
 
-bearerToken = "BEARER_TOKEN"
+bearerToken = os.getenv("BEARER_TOKEN")
 
 #Data
 data = {
