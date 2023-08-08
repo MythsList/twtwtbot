@@ -30,7 +30,7 @@ def generateContent(rawData):
     return grammar.flatten("#origin#")
 
 def postContent(content):
-    client = tweepy.Client(bearerToken, apiKey, apiSecret, accessToken, accessTokenSecret)
+    client = tweepy.Client(bearerToken, apiKey, apiSecret, accessToken, accessTokenSecret, wait_on_rate_limit=True)
     auth = tweepy.OAuth1UserHandler(apiKey, apiSecret, accessToken, accessTokenSecret)
     api = tweepy.API(auth)
 
