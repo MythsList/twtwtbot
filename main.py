@@ -7,13 +7,13 @@ import time
 from tracery.modifiers import base_english
 
 #Keys
-apiKey = os.getenv("API_KEY")
-apiSecret = os.getenv("API_SECRET")
+apiKey = os.getenv("apiKey")
+apiSecret = os.getenv("apiSecret")
 
-accessToken = os.getenv("ACCESS_TOKEN")
-accessTokenSecret = os.getenv("ACCESS_TOKEN_SECRET")
+accessToken = os.getenv("accessToken")
+accessTokenSecret = os.getenv("accessTokenSecret")
 
-bearerToken = os.getenv("BEARER_TOKEN")
+bearerToken = os.getenv("bearerToken")
 
 #Data
 data = {
