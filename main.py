@@ -2,6 +2,7 @@
 import tweepy
 import tracery
 import os
+import time
 
 from tracery.modifiers import base_english
 
@@ -44,3 +45,4 @@ def postContent(content):
 if __name__ == "__main__":
     sentence = generateContent(data)
     postContent(sentence)
+    time.sleep(3600)
